@@ -13,9 +13,9 @@ const io = require('socket.io')(http);
 
 
 // api
-// app.get("/home" , function(req,res){
-//     res.end("All Posts !! !!!");
-// })
+app.get("/" , function(req,res){
+    res.end("Welcome");
+})
 
 // jab bhi koe client connect hoga to this event will fire !!
 io.on('connection', function(socket){
