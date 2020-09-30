@@ -31,7 +31,11 @@ io.on('connection', function(socket){
 
 });
   
-
-http.listen(3000, () => {
-  console.log('server is listening at 3000 port');
+let port = process.env.PORT || 3000;
+http.listen(port, () => {
+  console.log('server started');
 });
+
+
+//TCP port => to identify server uniquely 
+// IP address => to identify machine on a network uniquely
